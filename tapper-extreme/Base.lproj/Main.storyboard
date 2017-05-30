@@ -48,8 +48,8 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEm-hf-RYf">
-                                <rect key="frame" x="87" y="60" width="200" height="200"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEm-hf-RYf">
+                                <rect key="frame" x="87" y="199" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="3jq-ct-FtE"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="6ru-fs-qhz"/>
@@ -61,10 +61,12 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="ohl-uk-4LP"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="O35LUK0"/>
+                                <connections>
+                                    <action selector="onCoinTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jPi-YL-7ck"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3f-4D-54e">
-                                <rect key="frame" x="149" y="313" width="80" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taps" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3f-4D-54e">
+                                <rect key="frame" x="168.5" y="449" width="37" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -80,10 +82,12 @@
                             <constraint firstItem="Z0w-UI-E4K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="Mqr-Yu-wFr"/>
                             <constraint firstItem="CEm-hf-RYf" firstAttribute="top" secondItem="Z0w-UI-E4K" secondAttribute="bottom" constant="8" id="T3i-5W-JbM"/>
                             <constraint firstItem="CEm-hf-RYf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VgK-Hu-66f"/>
+                            <constraint firstItem="g3f-4D-54e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XKD-BT-nsr"/>
                             <constraint firstItem="4uR-nh-Wtu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YzN-a3-EkP"/>
                             <constraint firstItem="Z0w-UI-E4K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dc6-Iq-aNs"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4uR-nh-Wtu" secondAttribute="bottom" constant="65" id="roi-AF-KDT"/>
                             <constraint firstItem="4uR-nh-Wtu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tgY-mQ-yR6"/>
+                            <constraint firstItem="g3f-4D-54e" firstAttribute="top" secondItem="CEm-hf-RYf" secondAttribute="bottom" constant="50" id="zAB-vN-gux"/>
                             <constraint firstItem="CEm-hf-RYf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zJb-JG-mQY"/>
                             <constraint firstAttribute="bottom" secondItem="4uR-nh-Wtu" secondAttribute="bottom" constant="65" id="zYM-1a-8iE"/>
                             <constraint firstItem="Z0w-UI-E4K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="zyR-ut-X8r"/>
